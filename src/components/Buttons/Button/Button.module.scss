@@ -1,0 +1,30 @@
+@import '../../../components/GlobalStyle/GlobalStyle.scss';
+.button, .outLine {
+    width: 95px;
+    height: 35px;
+    background-color: $primary;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover {
+        cursor: pointer;
+    }
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon, .title {
+            display: flex;
+            align-items: center;
+        }
+        .icon + .title, .title + .icon {
+            margin-left: 8px;
+        }
+    }
+}
+.outLine {
+    border: 2px solid $primary;
+    background-color: #fff;
+    color: #161823;
+}

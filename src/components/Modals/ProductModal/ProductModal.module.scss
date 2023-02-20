@@ -1,0 +1,49 @@
+@import '../../GlobalStyle/GlobalStyle.scss';
+.wrapper {
+    min-width: 385px;
+    min-height: 558px;
+    position: relative;
+    .content {
+        min-height: 504px;
+        .tab {
+            display: flex;
+            height: 35px;
+            justify-content: center;
+            border: none solid #333;
+            // border-radius: 4px;
+            overflow: hidden;
+            .tab-btn {
+                flex: 1;
+                border: solid transparent;
+                background-color: transparent;
+                font-size: 1.6rem;
+                font-weight: 600;
+                color: $primary;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .btn-active {
+               // $primary: #2f4050;
+               border-bottom: 4px solid  $primary;
+            }
+        }
+    }
+}
+.btn-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // display: flex;
+    // justify-content: flex-end;
+    // margin-top: 10px;
+
+    .modal-btn {
+    }
+}
+.form-show {
+    display: block;
+}
+.form-hide {
+    display: none;
+}

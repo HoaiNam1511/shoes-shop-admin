@@ -1,0 +1,109 @@
+$border: 1px solid rgb(216, 216, 216);
+.wrapper {
+    .upload {
+        display: none;
+    }
+    .upload-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #5f6982;  
+        border-radius: 4px;
+        padding: 15px 10px;
+        margin-top: 6px;
+        cursor: pointer;
+        .upload-icon, .upload-title {
+            color: #5f6982;   
+        }
+        .upload-icon {
+            font-size: 4rem;
+        }
+    }
+    .image-container {
+        margin: 5px -2px;
+        height: 242px;
+        overflow-y: auto;
+        .image-item {
+            position: relative;
+            width: 145px;
+            display: inline-block;
+            .btn-delete {
+                position: absolute;
+                right: 5px;
+                top: 2px;
+                width: 20px;
+                height: 20px;
+                border: 0px solid #fff;
+                border-radius: 100%;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .image {
+                padding: 0 2px;
+                width: 100%;
+            }
+        }
+       
+    }
+    
+}
+
+.flex-2 {
+    display: flex;
+    margin: 0 -4px 0 -4px;
+    align-items: center;
+    .flex-item {
+        flex: 1;
+        padding: 0 4px 0 4px;
+    }
+} 
+
+.form-group {
+    height: 80px;
+
+    .input-label, .form-input {
+        color: #161823;
+    }
+
+    .input-label {
+        display: block;
+        font-size: 1.4rem;
+    }
+    .form-input, .select {
+        height: 35px;
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 0 10px;
+        border-radius: 4px;
+        border: $border;
+        outline: none; 
+        transition: .2s;
+    }
+    .form-input:focus {
+        border-color:dodgerBlue;
+        box-shadow:0 0 2px 0 dodgerBlue;
+    }
+    &:first-child {
+        margin-top: 6px;
+    }
+    .radio-container {
+        display: flex;
+        justify-content: space-evenly;
+        .radio-item {
+            display: flex;
+            input[type="radio"] {
+                -ms-transform: scale(1); /* IE 9 */
+                -webkit-transform: scale(1); /* Chrome, Safari, Opera */
+                transform: scale(1);
+                line-height: 100%;
+            }
+            .radio-label {
+                margin-left: 8px;
+            }
+        }
+    }
+    // &:first-child {
+    //     margin-top: 10px;
+    // }
+}
