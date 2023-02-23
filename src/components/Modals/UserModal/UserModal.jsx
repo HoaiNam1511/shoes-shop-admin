@@ -50,7 +50,7 @@ function UserModal({ className }) {
                 useName: userRedux.user_name,
                 password: userRedux.password,
                 status: userRedux.status,
-                role: userRedux.role[0].User_role.RoleId,
+                role: userRedux.role[0].user_role.RoleId,
             });
         }
     };
