@@ -2,12 +2,12 @@ const accountStatus = [
     {
         id: 1,
         title: "Enable",
-        status: true,
+        status: 1,
     },
     {
         id: 2,
         title: "Disable",
-        status: false,
+        status: 0,
     },
 ];
 export default accountStatus;

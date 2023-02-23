@@ -101,6 +101,8 @@ function User() {
         }
     };
 
+    console.log(users);
+
     return (
         <div>
             <Button
@@ -167,9 +169,7 @@ function User() {
                             <td>{user.user_name}</td>
                             <td>{user.email}</td>
                             <td>{user.role[0].name}</td>
-                            <td>
-                                {user.status === "1" ? "Enable" : "Disable"}
-                            </td>
+                            <td>{+user.status === 1 ? "Enable" : "Disable"}</td>
                             <td>
                                 <ActionButton
                                     type="delete"
